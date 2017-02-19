@@ -10,16 +10,30 @@ class App extends React.Component {
   this.playCurrentVideo = this.playCurrentVideo.bind(this);
   }
 
+  this.props.searchYouTube(options, (vidoes) => 
+    this.setState({
+      videos: videos,
+      currentVideo: videos[0]
+    })
+  );
+
   playCurrentVideo(video) {
     this.setState ({
       currentVideo: video
     });
   }
 
+  getVideos(query) {
+    var options = {
+      key: this.props.API_KEY,
+      query: query
+    }
+  }
+
   render() {
     return (      
       <div>
-        <Nav />
+        <Nav changeSearchInput={this.getVideos.bind(this)}/>
         <div className="col-md-7">
           <VideoPlayer video={this.state.currentVideo}/>
         </div>
