@@ -1,17 +1,11 @@
-class VideoList extends React.Component {
-  constructor(props) {
-  }
+var VideoList = ({videos, playCurrentVideo}) => (
+  <div className="video-list">
+    {videos.map((video) =>
+      <VideoListEntry playCurrentVideo={playCurrentVideo} key={video.etag} video={video}/>
+    )}
+  </div>
+) 
 
-  render() {
-    return (
-      <div>
-        {this.props.videos.map(video =>
-          <VideoListEntry video={video}/>
-        )}
-      </div>
-    );
-  }
-}
 
 // PropTypes tell other developers what `props` a component expects
 // Warnings will be shown in the console when the defined rules are violated

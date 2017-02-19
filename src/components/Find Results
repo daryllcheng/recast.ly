@@ -1,0 +1,154 @@
+Searching 9932 files for "videos="
+
+/Users/student/Desktop/hrsf71-recast.ly/compiled/src/components/App.js:
+   51  //     <div className="col-md-7">
+   52  //         <VideoPlayer video={fakeVideoData.map(video=>video)}/>
+   53: //       // <VideoPlayer videos={fakeVideoData}/>
+   54  //     </div>
+   55  //     <div className="col-md-5">
+   56: //       <VideoList videos={fakeVideoData}/>
+   57  //     </div>
+   58  //   </div>
+
+/Users/student/Desktop/hrsf71-recast.ly/spec/components/VideoListSpec.jsx:
+   16      var oneFakeVideo = window.fakeVideoData.slice(-1);
+   17      shallowRenderer.render(
+   18:       <VideoList videos={oneFakeVideo} />
+   19      );
+   20  
+   ..
+   29      var threeFakeVideos = window.fakeVideoData.slice(-3);
+   30      shallowRenderer.render(
+   31:       <VideoList videos={threeFakeVideos} />
+   32      );
+   33      
+   ..
+   42      var fiveFakeVideos = window.fakeVideoData.slice(-5);
+   43      shallowRenderer.render(
+   44:       <VideoList videos={fiveFakeVideos} />
+   45      );
+   46      
+
+/Users/student/Desktop/hrsf71-recast.ly/src/components/App.jsx:
+    7          <div className="col-md-7">
+    8              <VideoPlayer video={fakeVideoData[0]}/>
+    9:             // <VideoPlayer videos={fakeVideoData}/>
+   10:           // <VideoPlayer videos={fakeVideoData}/>
+   11          </div>
+   12          <div className="col-md-5">
+   13:           <VideoList videos={fakeVideoData}/>
+   14          </div>
+   15        </div>  
+   ..
+   23  //     <div className="col-md-7">
+   24  //         <VideoPlayer video={fakeVideoData.map(video=>video)}/>
+   25: //       // <VideoPlayer videos={fakeVideoData}/>
+   26  //     </div>
+   27  //     <div className="col-md-5">
+   28: //       <VideoList videos={fakeVideoData}/>
+   29  //     </div>
+   30  //   </div>
+
+10 matches across 3 files
+
+
+Searching 9932 files for "videos="
+
+/Users/student/Desktop/hrsf71-recast.ly/compiled/src/components/App.js:
+   51  //     <div className="col-md-7">
+   52  //         <VideoPlayer video={fakeVideoData.map(video=>video)}/>
+   53: //       // <VideoPlayer videos={fakeVideoData}/>
+   54  //     </div>
+   55  //     <div className="col-md-5">
+   56: //       <VideoList videos={fakeVideoData}/>
+   57  //     </div>
+   58  //   </div>
+
+/Users/student/Desktop/hrsf71-recast.ly/spec/components/VideoListSpec.jsx:
+   16      var oneFakeVideo = window.fakeVideoData.slice(-1);
+   17      shallowRenderer.render(
+   18:       <VideoList videos={oneFakeVideo} />
+   19      );
+   20  
+   ..
+   29      var threeFakeVideos = window.fakeVideoData.slice(-3);
+   30      shallowRenderer.render(
+   31:       <VideoList videos={threeFakeVideos} />
+   32      );
+   33      
+   ..
+   42      var fiveFakeVideos = window.fakeVideoData.slice(-5);
+   43      shallowRenderer.render(
+   44:       <VideoList videos={fiveFakeVideos} />
+   45      );
+   46      
+
+/Users/student/Desktop/hrsf71-recast.ly/src/components/App.jsx:
+    7          <div className="col-md-7">
+    8              <VideoPlayer video={fakeVideoData[0]}/>
+    9:             // <VideoPlayer videos={fakeVideoData}/>
+   10:           // <VideoPlayer videos={fakeVideoData}/>
+   11          </div>
+   12          <div className="col-md-5">
+   13:           <VideoList videos={fakeVideoData}/>
+   14          </div>
+   15        </div>  
+   ..
+   23  //     <div className="col-md-7">
+   24  //         <VideoPlayer video={fakeVideoData.map(video=>video)}/>
+   25: //       // <VideoPlayer videos={fakeVideoData}/>
+   26  //     </div>
+   27  //     <div className="col-md-5">
+   28: //       <VideoList videos={fakeVideoData}/>
+   29  //     </div>
+   30  //   </div>
+
+10 matches across 3 files
+
+
+Searching 9932 files for "<VideoPlayer"
+
+/Users/student/Desktop/hrsf71-recast.ly/compiled/src/components/App.js:
+   50  //     <Nav />
+   51  //     <div className="col-md-7">
+   52: //         <VideoPlayer video={fakeVideoData.map(video=>video)}/>
+   53: //       // <VideoPlayer videos={fakeVideoData}/>
+   54  //     </div>
+   55  //     <div className="col-md-5">
+
+/Users/student/Desktop/hrsf71-recast.ly/spec/components/VideoPlayerSpec.jsx:
+   15      cuteCatVideo = renderIntoDocument(
+   16        <Wrapper>
+   17:         <VideoPlayer video={window.fakeVideoData[0]} />
+   18        </Wrapper>
+   19      );
+   ..
+   21      superCuteCatVideo = renderIntoDocument(
+   22        <Wrapper>
+   23:         <VideoPlayer video={window.fakeVideoData[1]} />
+   24        </Wrapper>
+   25      );
+   ..
+   27      hackReactorVideo = renderIntoDocument(
+   28        <Wrapper>
+   29:         <VideoPlayer video={window.fakeVideoData[2]} />
+   30        </Wrapper>
+   31      );
+
+/Users/student/Desktop/hrsf71-recast.ly/src/components/App.jsx:
+    6          <Nav />
+    7          <div className="col-md-7">
+    8:             <VideoPlayer video={fakeVideoData[0]}/>
+    9:             // <VideoPlayer videos={fakeVideoData}/>
+   10:           // <VideoPlayer videos={fakeVideoData}/>
+   11          </div>
+   12          <div className="col-md-5">
+   ..
+   22  //     <Nav />
+   23  //     <div className="col-md-7">
+   24: //         <VideoPlayer video={fakeVideoData.map(video=>video)}/>
+   25: //       // <VideoPlayer videos={fakeVideoData}/>
+   26  //     </div>
+   27  //     <div className="col-md-5">
+
+10 matches across 3 files
